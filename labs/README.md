@@ -16,19 +16,18 @@ The labs do not replace the [pillars](../pillars/). They illustrate them. Run th
 
 ## Phase 1 labs
 
-| # | Lab | Pillar(s) | Time |
+| # | Lab | Pillar(s) / Lens | Time |
 |---|---|---|---|
 | 01 | [Safe Rollout in 15 Minutes](./01-safe-rollout-in-15-minutes.md) | Safe Release, Operational Excellence | ~15 min |
 | 02 | [Build a Kill Switch You Can Trust](./02-build-a-kill-switch-you-can-trust.md) | Safe Release, Reliability | ~30 min |
+| 03 | [Run a Real Experiment](./03-run-a-real-experiment.md) | Experimentation, Safe Release | ~45 min setup + 1–4 weeks runtime |
+| 04 | [Flag Hygiene at Scale](./04-flag-hygiene-at-scale.md) | Governance, Operational Excellence | ~60 min + quarterly cadence |
+| 05 | [Securing Flag Operations](./05-securing-flag-operations.md) | Security & Compliance, Governance | ~90 min |
+| 06 | [Relay Proxy Deployment](./06-relay-proxy-deployment.md) | Reliability, Operational Excellence | ~2–3 hours |
+| 07 | [AI Flag Patterns](./07-ai-flag-patterns.md) | Safe Release, Reliability, Experimentation, AI/GenAI lens | ~90 min |
+| 08 | [Migration with Flags](./08-migration-with-flags.md) | Safe Release, Reliability, Operational Excellence | varies by migration |
 
-Future phases will add:
-
-- Run a Real Experiment (hypothesis → metrics → decision)
-- Flag Hygiene at Scale (archival policy, Code References, dashboards)
-- Securing Flag Operations (RBAC, approvals, audit walkthrough)
-- Relay Proxy Deployment (topology, sizing, observability)
-- AI Flag Patterns (model swap, prompt versioning, cost guardrail)
-- Migration with Flags (strangler-fig walkthrough)
+Future phases may add labs for specific lenses (Mobile, Hybrid/Multi-Cloud, Platform Engineering, Edge, SaaS) and for the Performance & Cost and Developer Experience pillars as they ship.
 
 ---
 

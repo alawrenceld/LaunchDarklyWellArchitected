@@ -58,7 +58,7 @@ When a rollout step is "increase to 50% on Tuesday at 10 AM," use scheduled chan
 ## 3. Guarded Releases
 
 ### BP-3.1 Use Guarded Releases for any customer-facing, high-blast-radius change
-A [guarded release](https://launchdarkly.com/blog/launch-week-2024-introducing-guarded-releases/) increases exposure while monitoring metrics for regressions. If a guardrail moves the wrong way past a threshold, the rollout reverts automatically.
+A [guarded rollout](https://launchdarkly.com/docs/home/releases/guarded-rollouts) increases exposure while monitoring metrics for regressions. If a guardrail moves the wrong way past a threshold, the rollout reverts automatically.
 
 **Why:** automatic rollback is faster than human rollback by an order of magnitude. The metric notices before the on-call's pager does.
 

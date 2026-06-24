@@ -1,6 +1,6 @@
 # Guardian Edition — Deep Dive
 
-[LaunchDarkly Guardian Edition](https://launchdarkly.com/) is the plan tier built for organizations that need governed, auditable, change-managed release operations. It is the LaunchDarkly product surface that makes most of this lens enforceable in configuration rather than policy.
+[LaunchDarkly Guardian Edition](https://launchdarkly.com/docs/home/account/plans) is the plan tier built for organizations that need governed, auditable, change-managed release operations. It is the LaunchDarkly product surface that makes most of this lens enforceable in configuration rather than policy.
 
 This page describes how to use Guardian Edition's capabilities in practice for a regulated workload. It is not a feature list; for the canonical feature surface, see LaunchDarkly's product documentation and account comparisons.
 

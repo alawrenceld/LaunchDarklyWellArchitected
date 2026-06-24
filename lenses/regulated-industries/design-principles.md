@@ -18,7 +18,7 @@ For every LD-managed system, the team can name the compliance regimes that apply
 
 ## RI-4. Federal-scoped workloads run on the offering designed for them
 
-If your workload is subject to FedRAMP, ITAR, or comparable high-assurance regimes, deploy it on [LaunchDarkly Federal](https://launchdarkly.com/). Don't try to wrestle the commercial offering into compliance — the boundaries, the threat model, and the audit expectations are different.
+If your workload is subject to FedRAMP, ITAR, or comparable high-assurance regimes, deploy it on [LaunchDarkly Federal](https://launchdarkly.com/docs/home/infrastructure/federal). Don't try to wrestle the commercial offering into compliance — the boundaries, the threat model, and the audit expectations are different.
 
 ## RI-5. Evidence is continuous, not episodic
 

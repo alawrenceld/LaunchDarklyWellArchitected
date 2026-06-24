@@ -40,7 +40,7 @@ For LaunchDarkly's full vocabulary reference, see the [official vocabulary page]
 
 **Progressive release.** A release that gradually increases exposure — by percentage, by segment, by ring — instead of flipping everyone at once.
 
-**Guarded release / guarded rollout.** A progressive release with attached metrics. As exposure increases, LaunchDarkly monitors those metrics for regressions and can automatically roll back if a regression is detected. (See [LaunchDarkly Guarded Releases](https://launchdarkly.com/blog/launch-week-2024-introducing-guarded-releases/).)
+**Guarded release / guarded rollout.** A progressive release with attached metrics. As exposure increases, LaunchDarkly monitors those metrics for regressions and can automatically roll back if a regression is detected. (See the [Guarded rollouts docs](https://launchdarkly.com/docs/home/releases/guarded-rollouts).)
 
 **Release pipeline.** An automated, multi-phase rollout workflow that moves a flag through defined stages, environments, and audiences with configurable strategies and approvals. Available to Enterprise and Guardian plans. (See [Release Pipelines docs](https://launchdarkly.com/docs/home/releases/release-pipelines).)
 

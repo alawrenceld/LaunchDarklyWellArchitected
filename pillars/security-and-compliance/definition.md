@@ -34,7 +34,7 @@ How LaunchDarkly fits into specific compliance frameworks: SOC2, HIPAA, PCI, ISO
 
 ## 8. Federal and high-assurance deployments
 
-The dedicated [Federal offering](https://launchdarkly.com/) for workloads subject to FedRAMP and similar regimes. Covers when to use it, what's different about it, and how it integrates with the team's broader Federal posture.
+The dedicated [Federal offering](https://launchdarkly.com/docs/home/infrastructure/federal) for workloads subject to FedRAMP and similar regimes. Covers when to use it, what's different about it, and how it integrates with the team's broader Federal posture.
 
 ## 9. AI security and safety
 

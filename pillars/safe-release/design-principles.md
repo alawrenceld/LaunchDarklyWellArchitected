@@ -20,7 +20,7 @@ Big-bang flips are reserved for true emergencies (e.g., a kill switch).
 
 A guardrail metric is a metric you commit to *not making worse*. Error rate. Latency. Conversion. Cost per request.
 
-Every customer-facing release should attach at least one guardrail. For high-blast-radius releases, attach guardrails to a [Guarded Release](https://launchdarkly.com/blog/launch-week-2024-introducing-guarded-releases/) so the rollback can be automatic.
+Every customer-facing release should attach at least one guardrail. For high-blast-radius releases, attach guardrails to a [guarded rollout](https://launchdarkly.com/docs/home/releases/guarded-rollouts) so the rollback can be automatic.
 
 ## SR-4. Defaults are explicit
 

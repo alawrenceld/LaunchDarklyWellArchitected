@@ -2,34 +2,46 @@
 
 > *Every release with a hypothesis is also an experiment. Every experiment is a decision waiting to happen.*
 
-**Status: Phase 2 — draft scheduled, not yet written.**
+The Experimentation pillar covers how the team designs experiments, picks metrics, runs them with statistical rigor, and converts results into decisions. It is the pillar that turns shipping into learning — and the pillar that distinguishes teams that *know* a feature worked from teams that *hope* it did.
 
-This pillar covers hypothesis design, metric design (primary / secondary / guardrail), the distinction between rollouts and experiments and guarded releases, sample size and statistical power, holdouts, sequential and multi-arm testing, AI Config experimentation, results interpretation, and decision discipline. It is the pillar that turns shipping into learning.
+This pillar overlaps with Safe Release (which covers Guarded Releases — the metric-driven rollout cousin of an experiment) and with Operational Excellence (which covers post-release feedback loops via observability). Experimentation is where the rigorous treatment of metrics, hypotheses, and decisions lives.
 
-## When this pillar will be most relevant
+## Status
+
+| | |
+|---|---|
+| Version | 0.1 (draft) |
+| Phase | 2 |
+| Last updated | 2026-06-24 |
+
+## Contents
+
+1. [Design Principles](./design-principles.md) — the principles specific to Experimentation.
+2. [Definition](./definition.md) — focus areas inside the pillar.
+3. [Best Practices](./best-practices.md) — what to do, organized by focus area.
+4. [Review Questions](./review-questions.md) — diagnostic questions for a LDWA review.
+5. [Anti-Patterns](./anti-patterns.md) — common ways this pillar goes wrong.
+
+## When this pillar is most relevant
 
 - You run A/B tests on customer-facing surfaces.
-- You use LaunchDarkly experiments to make product decisions.
+- You're using LaunchDarkly experiments to make product decisions.
 - You're rolling out AI Configs and need to compare variations on cost, latency, and quality.
 - You ship behind flags but don't always close the loop on whether the change worked.
+- You've had — or want to avoid — decisions made on noisy or misleading data.
 
-## Related Phase 1 pillars
+## Related pillars
 
-- [Safe Release & Progressive Delivery](../safe-release/) — already covers Guarded Releases (the metric-driven rollout cousin of an experiment).
-- [Operational Excellence](../operational-excellence/) — already covers the use of LD Observability to close the release loop.
-- [Governance](../governance/) — already covers the experiment lifecycle (decision deadlines, post-experiment cleanup).
+- **Safe Release** — covers Guarded Releases, the metric-driven rollout cousin of an experiment. The boundary is a judgment call; both pillars are usually relevant for high-impact changes.
+- **Operational Excellence** — covers the *operational* feedback loop on releases (LD Observability, post-release review). Experimentation covers the *statistical* feedback loop.
+- **Governance** — covers the experiment lifecycle (decision deadlines, cleanup after decisions).
+- **AI/GenAI Lens** — covers experimentation specific to AI Configs.
 
-Until this pillar is published, draw on those pillars for the underlying practice.
+## The headline principles
 
-## Phase 2 scope
-
-When drafted, this pillar will include:
-
-- Design principles for experimentation.
-- Focus areas covering hypothesis, metric design, experiment vs. rollout distinction, sample size, sequential testing, multi-arm patterns, AI Config experimentation, decision review.
-- Best practices.
-- Review questions.
-- Worked examples (good vs. bad experiment setups, including an AI Config example).
-- An anti-pattern catalogue.
-
-See the [build plan](../../todo.md) for sequencing.
+- **Every meaningful change has a hypothesis.** Before you ship, state what you expect to happen.
+- **Metrics are designed, not chosen reflexively.** A guardrail you don't believe in is no guardrail at all.
+- **Power matters.** An underpowered experiment is a misleading experiment.
+- **Decisions are pre-committed.** What would make you keep this? What would make you kill it? Decide before you see the data.
+- **Holdouts exist for a reason.** Long-term effects only show up in long-term measurements.
+- **Every experiment ends with a decision.** Experiments that run forever are debt, not data.

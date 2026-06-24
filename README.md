@@ -44,7 +44,7 @@ Each pillar is a deep dive into one dimension of a well-architected LaunchDarkly
 | [Security & Compliance](./pillars/security-and-compliance/) | RBAC, audit log, residency, Guardian Edition, Federal | Phase 1 |
 | [Reliability & Resilience](./pillars/reliability/) | SDK resilience, Relay Proxy, edge, defaults, chaos drills | Phase 1 |
 | [Governance & Artifact Lifecycle](./pillars/governance/) | Flag hygiene, Code References, ownership, change management | Phase 1 |
-| [Experimentation & Measurement](./pillars/experimentation/) | Hypotheses, metrics, holdouts, decision review | Phase 2 |
+| [Experimentation & Measurement](./pillars/experimentation/) | Hypotheses, metrics, holdouts, decision review | Phase 2 ✓ |
 | [Performance & Cost Efficiency](./pillars/performance-and-cost/) | Latency, events, sizing, cost guardrails | Phase 2 |
 | [Developer Experience & Velocity](./pillars/developer-experience/) | SDK patterns, IaC, testing, type-safety, onboarding | Phase 2 |
 
@@ -54,7 +54,7 @@ Lenses re-apply the pillars to a specific domain or deployment context.
 | Lens | When to use it | Status |
 |---|---|---|
 | [Regulated Industries Lens](./lenses/regulated-industries/) | FinServ, healthcare, public sector; Guardian Edition + Federal | Phase 1 |
-| [AI / GenAI Lens](./lenses/ai-genai/) | Teams using LaunchDarkly AI Configs | Phase 2 |
+| [AI / GenAI Lens](./lenses/ai-genai/) | Teams using LaunchDarkly AI Configs | Phase 2 ✓ |
 | [Mobile Lens](./lenses/mobile/) | Client-side, offline-first, app-store cadence | Phase 3 |
 | [Hybrid / Multi-Cloud / On-Prem Lens](./lenses/hybrid-multicloud/) | Multiple providers, air-gapped, restricted-egress | Phase 3 |
 | [Platform Engineering Lens](./lenses/platform-engineering/) | LD as an internal platform capability | Phase 3 |

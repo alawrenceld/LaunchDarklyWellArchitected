@@ -312,3 +312,11 @@ Still open:
 - [ ] **Product-coverage governance:** what's the process when LD ships a new product or capability mid-cycle? Who decides which pillar(s) absorb it, and when it becomes a review-question subject? Recommend tying LDWA updates to GA milestones; needs steering-group confirmation.
 - [ ] **Brand/legal confirmation** of the LDWA name and visual treatment for public launch.
 - [ ] **Launch event/timeline** — when does the public launch happen, what's the surrounding campaign?
+
+---
+
+## 13. Optional / nice-to-have (only if we decide to invest)
+
+These aren't part of any committed phase. Captured here so they're not forgotten if priorities shift later.
+
+- [ ] **CI build + publish the v2 container image to GHCR (or equivalent).** A GitHub Actions workflow that, on push to `main`, runs `npm run typecheck` + builds the Docker image + pushes to `ghcr.io/alawrenceld/ldwa-review-tool` (or an org-owned registry). Makes the container available for deployment without anyone running `docker build` locally. Only worth doing once we have a real domain and an actual deployment target.

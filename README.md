@@ -45,7 +45,7 @@ Each pillar is a deep dive into one dimension of a well-architected LaunchDarkly
 | [Reliability & Resilience](./pillars/reliability/) | SDK resilience, Relay Proxy, edge, defaults, chaos drills | Phase 1 |
 | [Governance & Artifact Lifecycle](./pillars/governance/) | Flag hygiene, Code References, ownership, change management | Phase 1 |
 | [Experimentation & Measurement](./pillars/experimentation/) | Hypotheses, metrics, holdouts, decision review | Phase 2 ✓ |
-| [Performance & Cost Efficiency](./pillars/performance-and-cost/) | Latency, events, sizing, cost guardrails | Phase 2 |
+| [Performance & Cost Efficiency](./pillars/performance-and-cost/) | Latency, events, sizing, cost guardrails | Phase 2 ✓ |
 
 ### 3. The Lenses
 Lenses re-apply the pillars to a specific domain or deployment context.

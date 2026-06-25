@@ -60,7 +60,7 @@ Lenses re-apply the pillars to a specific domain or deployment context.
 | [Platform Engineering Lens](./lenses/platform-engineering/) | LD as an internal platform capability | Phase 3 ✓ |
 | [Edge & Performance-Critical Lens](./lenses/edge-performance/) | Edge SDKs, latency budgets, Relay Proxy at scale | Phase 3 ✓ |
 | [Migration & Modernization Lens](./lenses/migration/) | Strangler-fig, dark launches, cutovers | Phase 3 ✓ |
-| [Experimentation / Growth Lens](./lenses/experimentation-growth/) | Teams whose primary use is A/B testing | Phase 3 |
+| [Experimentation / Growth Lens](./lenses/experimentation-growth/) | Teams whose primary use is A/B testing | Phase 3 ✓ |
 | [SaaS / Multi-Tenant Lens](./lenses/saas-multitenant/) | Per-tenant targeting, entitlements, customer rollouts | Phase 3 ✓ |
 
 ---
@@ -124,7 +124,7 @@ LDWA exists to make those properties explicit, measurable, and reviewable.
 
 ## Project status
 
-LDWA is a **living framework**. Phase 1 + Phase 2 (Experimentation + AI/GenAI lens) content is shipped; remaining Phase 2 and Phase 3 content is in the queue. See [`todo.md`](./todo.md) for the full build plan and [`framework/decisions.md`](./framework/decisions.md) for the foundational decisions that have been made.
+LDWA is a **living framework**. All 7 pillars and all 9 lenses are drafted at v0.1; the full Phase 1, Phase 2, and Phase 3 framework content is in this repository. Remaining build queue: the interactive review tool (Phase 3 deliverable) and the supporting marketing / enablement assets. See [`todo.md`](./todo.md) for the full build plan and [`framework/decisions.md`](./framework/decisions.md) for the foundational decisions that have been made.
 
 ## License & contribution
 

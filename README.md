@@ -55,7 +55,7 @@ Lenses re-apply the pillars to a specific domain or deployment context.
 | [Regulated Industries Lens](./lenses/regulated-industries/) | FinServ, healthcare, public sector; Guardian Edition + Federal | Phase 1 |
 | [AI / GenAI Lens](./lenses/ai-genai/) | Teams using LaunchDarkly AI Configs | Phase 2 ✓ |
 | [Developer Experience & Velocity Lens](./lenses/developer-experience-velocity/) | SDK patterns, IaC, testing, type-safety, onboarding | Phase 2 |
-| [Mobile Lens](./lenses/mobile/) | Client-side, offline-first, app-store cadence | Phase 3 |
+| [Mobile Lens](./lenses/mobile/) | Client-side, offline-first, app-store cadence | Phase 3 ✓ |
 | [Hybrid / Multi-Cloud / On-Prem Lens](./lenses/hybrid-multicloud/) | Multiple providers, air-gapped, restricted-egress | Phase 3 |
 | [Platform Engineering Lens](./lenses/platform-engineering/) | LD as an internal platform capability | Phase 3 |
 | [Edge & Performance-Critical Lens](./lenses/edge-performance/) | Edge SDKs, latency budgets, Relay Proxy at scale | Phase 3 |

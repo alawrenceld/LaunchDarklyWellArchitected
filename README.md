@@ -61,7 +61,7 @@ Lenses re-apply the pillars to a specific domain or deployment context.
 | [Edge & Performance-Critical Lens](./lenses/edge-performance/) | Edge SDKs, latency budgets, Relay Proxy at scale | Phase 3 |
 | [Migration & Modernization Lens](./lenses/migration/) | Strangler-fig, dark launches, cutovers | Phase 3 |
 | [Experimentation / Growth Lens](./lenses/experimentation-growth/) | Teams whose primary use is A/B testing | Phase 3 |
-| [SaaS / Multi-Tenant Lens](./lenses/saas-multitenant/) | Per-tenant targeting, entitlements, customer rollouts | Phase 3 |
+| [SaaS / Multi-Tenant Lens](./lenses/saas-multitenant/) | Per-tenant targeting, entitlements, customer rollouts | Phase 3 ✓ |
 
 ---
 

@@ -292,10 +292,23 @@ Coverage expands by product area, not just by pillar count. The product-coverage
 
 ## 12. Open questions to resolve before Phase 1
 
-- [ ] Final pillar list and names (8 proposed above — likely too many; trim to 5–6 like AWS?).
-- [ ] Is "Experimentation" its own pillar or a focus area inside another pillar?
-- [ ] Is "Developer Experience" a pillar or a lens?
-- [ ] Will the review tool live inside the LaunchDarkly product or as a standalone?
-- [ ] How much of this is public (SEO/marketing) vs. gated (customer-only)?
-- [ ] What's the relationship to existing LD content (Guide, docs, Galaxy)? Replace, complement, or supersede?
-- [ ] **Product-coverage governance:** what's the process when LD ships a new product or capability mid-cycle? Who decides which pillar(s) absorb it, and when it becomes a review-question subject? Recommend tying LDWA updates to GA milestones.
+Resolved 2026-06-24 — see [Decisions Log](./framework/decisions.md) for the full record.
+
+- [x] Final pillar list and names → **7 pillars** (DX demoted to lens). See D-1, D-2.
+- [x] Is "Experimentation" its own pillar or a focus area? → **Pillar.** See D-3.
+- [x] Is "Developer Experience" a pillar or a lens? → **Lens.** See D-2.
+- [x] Will the review tool live inside the LaunchDarkly product or as a standalone? → **Standalone interactive web tool** on a dedicated subdomain (v2); v1 workbook is markdown. See D-12.
+- [x] How much of this is public vs. gated? → **Fully public**, AWS WA style. See D-4.
+- [x] Relationship to existing LD content? → **Complement** docs, Guide, Galaxy. See D-5.
+- [x] Hosting → **GitHub-first**, with subdomain for the v2 tool. See D-6.
+- [x] License → **CC BY 4.0.** See D-7.
+- [x] Name → **LDWA as working title; brand/legal review pending.** See D-8.
+- [x] Editorial owner → **Cross-functional team** (SAs + DevRel + PMM). See D-9.
+- [x] Contribution model → **Internal-LD-only for v1.** See D-10.
+- [x] Versioning → **Continuous + annual major.** See D-11.
+
+Still open:
+
+- [ ] **Product-coverage governance:** what's the process when LD ships a new product or capability mid-cycle? Who decides which pillar(s) absorb it, and when it becomes a review-question subject? Recommend tying LDWA updates to GA milestones; needs steering-group confirmation.
+- [ ] **Brand/legal confirmation** of the LDWA name and visual treatment for public launch.
+- [ ] **Launch event/timeline** — when does the public launch happen, what's the surrounding campaign?

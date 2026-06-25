@@ -1,0 +1,13 @@
+{
+  "name": "ldwa-one-pager",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Renders the LaunchDarkly Well-Architected executive one-pager from HTML to PDF.",
+  "type": "module",
+  "scripts": {
+    "build": "node render.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.49.0"
+  }
+}

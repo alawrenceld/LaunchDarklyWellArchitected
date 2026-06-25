@@ -1,0 +1,9 @@
+node_modules/
+package-lock.json
+
+# Söhne fonts are commercially licensed (Klim Type Foundry) and must not be
+# committed to the public repo. Other fonts in this directory may be OFL
+# or otherwise distributable, but for simplicity the whole fonts/ directory
+# is gitignored. See README.md for the setup step that populates it before
+# rendering.
+assets/fonts/

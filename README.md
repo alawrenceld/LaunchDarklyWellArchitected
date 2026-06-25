@@ -46,7 +46,6 @@ Each pillar is a deep dive into one dimension of a well-architected LaunchDarkly
 | [Governance & Artifact Lifecycle](./pillars/governance/) | Flag hygiene, Code References, ownership, change management | Phase 1 |
 | [Experimentation & Measurement](./pillars/experimentation/) | Hypotheses, metrics, holdouts, decision review | Phase 2 ✓ |
 | [Performance & Cost Efficiency](./pillars/performance-and-cost/) | Latency, events, sizing, cost guardrails | Phase 2 |
-| [Developer Experience & Velocity](./pillars/developer-experience/) | SDK patterns, IaC, testing, type-safety, onboarding | Phase 2 |
 
 ### 3. The Lenses
 Lenses re-apply the pillars to a specific domain or deployment context.
@@ -55,6 +54,7 @@ Lenses re-apply the pillars to a specific domain or deployment context.
 |---|---|---|
 | [Regulated Industries Lens](./lenses/regulated-industries/) | FinServ, healthcare, public sector; Guardian Edition + Federal | Phase 1 |
 | [AI / GenAI Lens](./lenses/ai-genai/) | Teams using LaunchDarkly AI Configs | Phase 2 ✓ |
+| [Developer Experience & Velocity Lens](./lenses/developer-experience-velocity/) | SDK patterns, IaC, testing, type-safety, onboarding | Phase 2 |
 | [Mobile Lens](./lenses/mobile/) | Client-side, offline-first, app-store cadence | Phase 3 |
 | [Hybrid / Multi-Cloud / On-Prem Lens](./lenses/hybrid-multicloud/) | Multiple providers, air-gapped, restricted-egress | Phase 3 |
 | [Platform Engineering Lens](./lenses/platform-engineering/) | LD as an internal platform capability | Phase 3 |
@@ -124,8 +124,10 @@ LDWA exists to make those properties explicit, measurable, and reviewable.
 
 ## Project status
 
-LDWA is a **living framework**. Phase 1 content is being drafted in this repository now. See [`todo.md`](./todo.md) for the full build plan, sequencing, and open questions.
+LDWA is a **living framework**. Phase 1 + Phase 2 (Experimentation + AI/GenAI lens) content is shipped; remaining Phase 2 and Phase 3 content is in the queue. See [`todo.md`](./todo.md) for the full build plan and [`framework/decisions.md`](./framework/decisions.md) for the foundational decisions that have been made.
 
 ## License & contribution
 
-The license model for public release is still being decided. See `todo.md` §10. Contribution guidelines will follow.
+LDWA is published under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](./LICENSE). You may use, share, and adapt the material — including for commercial purposes — with attribution.
+
+Contribution model (v1): pull requests are accepted only from LaunchDarkly employees; external community members are welcome to file issues. See [`framework/decisions.md`](./framework/decisions.md) D-10.

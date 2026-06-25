@@ -2,18 +2,48 @@
 
 > *Microseconds matter. So do propagation guarantees.*
 
-**Status: Phase 3 — draft scheduled, not yet written.**
+The Edge & Performance-Critical Lens specializes LDWA for two related categories of workload: those that evaluate flags at the CDN edge (Cloudflare Workers, Vercel Edge, Fastly Compute, Akamai EdgeWorkers), and those with latency budgets so tight that even in-region Relay isn't enough. The lens covers edge SDK selection, propagation lag handling, kill-switch design under latency constraints, and Relay Proxy operation at large scale.
 
-This lens specializes LDWA for teams running flag evaluation at the edge (Cloudflare Workers, Vercel Edge, Fastly Compute, Akamai) and for workloads with hard latency budgets. It is the lens that addresses the freshness/latency trade-off, edge-specific resilience, and the operational practice of running Relay Proxy fleets at scale.
+## Status
 
-## When this lens will apply
+| | |
+|---|---|
+| Version | 0.1 (draft) |
+| Phase | 3 |
+| Last updated | 2026-06-24 |
 
-- You evaluate flags inside an edge runtime.
-- Your latency budget is measured in milliseconds (or microseconds) and even Relay-Proxy-in-region adds too much.
-- You run high-traffic Relay Proxy fleets and need a deeper operational playbook than the default.
+## When this lens applies
 
-## Phase 3 scope
+Apply this lens if any of the following is true:
 
-The lens will cover edge SDK selection and topology, context propagation to the edge, the latency vs. freshness trade-off in detail, edge-specific kill switch design (acknowledging propagation lag), Relay Proxy at large scale (autoconfig, monitoring, capacity planning), and the integration of edge evaluation with origin-level evaluation.
+- Flag evaluation happens at the **CDN edge** (Cloudflare Workers, Vercel Edge, Fastly Compute, Akamai EdgeWorkers, or equivalent).
+- Your latency budget for flag evaluation is **measured in microseconds**, not milliseconds.
+- You operate **very large Relay Proxy fleets** (tens or hundreds of instances) and the standard guidance feels insufficient.
+- You serve **high-traffic content** where the latency cost of a non-edge evaluation would meaningfully degrade user experience.
+- You operate **edge-deployed business logic** (auth gates, content selection, A/B routing at the CDN layer).
 
-In the meantime, see [Reliability — Edge delivery](../../pillars/reliability/best-practices.md) and [Reliability — Relay Proxy](../../pillars/reliability/best-practices.md).
+If your workload runs entirely on origin servers with normal latency budgets, the standard Reliability and Performance & Cost pillars are sufficient.
+
+## Contents
+
+1. [Design Principles for Edge & Performance-Critical Workloads](./design-principles.md)
+2. [Pillar Overlays](./pillar-overlays.md)
+3. [Edge SDK Patterns](./edge-sdk-patterns.md) — selecting and operating edge SDKs; context propagation; the freshness vs. latency trade-off.
+4. [Relay Proxy at Large Scale](./relay-at-large-scale.md) — sizing, monitoring, capacity planning, and operating Relay fleets at the upper end of the volume curve.
+5. [Review Questions](./review-questions.md)
+6. [Anti-Patterns](./anti-patterns.md)
+
+## How to use this lens during a review
+
+1. Run the standard pillar review.
+2. Walk this lens's [review questions](./review-questions.md). Pay particular attention to edge propagation lag, context-at-edge correctness, and Relay-fleet observability at scale.
+3. Many edge / perf-critical workloads will surface findings around **Reliability** and **Performance & Cost**. Use the standard guidance plus the overlays here.
+
+## The headline principles
+
+- **Edge evaluation buys microseconds at the cost of freshness.** Both are real; both have consequences.
+- **The kill switch you can't propagate isn't a kill switch.** Plan for propagation lag.
+- **Context-at-edge is the foundation.** No correct evaluation without correct context.
+- **Relay at scale is a real production system.** Capacity, observability, drills — full operational discipline.
+- **Latency budgets are explicit.** "Fast" isn't a budget; "p95 ≤ 50ms" is.
+- **Edge is one tool, not the only one.** Mix edge + origin + Relay deliberately.

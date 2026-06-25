@@ -58,7 +58,7 @@ Lenses re-apply the pillars to a specific domain or deployment context.
 | [Mobile Lens](./lenses/mobile/) | Client-side, offline-first, app-store cadence | Phase 3 ✓ |
 | [Hybrid / Multi-Cloud / On-Prem Lens](./lenses/hybrid-multicloud/) | Multiple providers, air-gapped, restricted-egress | Phase 3 ✓ |
 | [Platform Engineering Lens](./lenses/platform-engineering/) | LD as an internal platform capability | Phase 3 ✓ |
-| [Edge & Performance-Critical Lens](./lenses/edge-performance/) | Edge SDKs, latency budgets, Relay Proxy at scale | Phase 3 |
+| [Edge & Performance-Critical Lens](./lenses/edge-performance/) | Edge SDKs, latency budgets, Relay Proxy at scale | Phase 3 ✓ |
 | [Migration & Modernization Lens](./lenses/migration/) | Strangler-fig, dark launches, cutovers | Phase 3 ✓ |
 | [Experimentation / Growth Lens](./lenses/experimentation-growth/) | Teams whose primary use is A/B testing | Phase 3 |
 | [SaaS / Multi-Tenant Lens](./lenses/saas-multitenant/) | Per-tenant targeting, entitlements, customer rollouts | Phase 3 ✓ |

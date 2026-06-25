@@ -1,0 +1,31 @@
+# LDWA Review Tool — local container run.
+#
+# Run from this directory (tool/v2/):
+#   docker compose up --build
+# Then open http://localhost:8080
+#
+# Override the canonical URL (used in <meta> tags, share links, etc.):
+#   LDWA_CANONICAL_URL=https://your-host.example.com docker compose up --build
+
+services:
+  ldwa-review-tool:
+    build:
+      # Build context is the repo root so the Dockerfile can pull in both
+      # the v2 app and the framework's pillar markdown files.
+      context: ../..
+      dockerfile: tool/v2/Dockerfile
+    image: ldwa-review-tool:latest
+    container_name: ldwa-review-tool
+    ports:
+      - "8080:8080"
+    environment:
+      # Override these via shell env or a .env file alongside this compose file.
+      LDWA_CANONICAL_URL: ${LDWA_CANONICAL_URL:-http://localhost:8080}
+      LDWA_VERSION: ${LDWA_VERSION:-v0.1-dev}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:8080/healthz || exit 1"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 5s

@@ -1,0 +1,80 @@
+/* Print stylesheet — used when the user runs File → Print or clicks
+ * "Export to PDF" on the Summary page. Optimized for the Summary layout. */
+
+@media print {
+  @page {
+    size: letter;
+    margin: 0.6in;
+  }
+
+  html, body {
+    background: white;
+    color: black;
+    font-size: 10pt;
+  }
+
+  .no-print { display: none !important; }
+
+  .shell { display: block; }
+  .topbar, .footer { display: none !important; }
+  .main { padding: 0; max-width: 100%; margin: 0; }
+
+  .page--summary { max-width: 100%; }
+
+  /* Use plain serif/sans for print readability over the brand fonts */
+  h1, h2, h3, h4 { color: black; page-break-after: avoid; }
+  h1 { font-size: 22pt; }
+  h2 { font-size: 14pt; }
+  h3, h4 { font-size: 11pt; }
+
+  .eyebrow {
+    color: #333 !important;
+    border-bottom-color: black !important;
+    font-size: 8pt !important;
+  }
+
+  .summary-head__meta {
+    border-color: black;
+  }
+
+  /* Cards lose the brand surfacing in print — straight to text-on-paper */
+  .overall, .finding, .empty, .notes, .pillar-card, .q-card {
+    background: white !important;
+    border-color: #ccc !important;
+    box-shadow: none !important;
+  }
+
+  .pillar-table th, .improvement-table th { border-color: black !important; }
+  .pillar-table td, .improvement-table td { border-color: #ddd !important; }
+
+  /* Pill colors print as bordered chips */
+  .pill {
+    background: white !important;
+    color: black !important;
+    border: 1px solid #888 !important;
+  }
+  .pill--high { border-color: #B33A1D !important; color: #B33A1D !important; }
+  .pill--medium { border-color: #B66A00 !important; color: #B66A00 !important; }
+  .pill--none { border-color: #3D7A4E !important; color: #3D7A4E !important; }
+
+  .count-tile {
+    background: white !important;
+    border-color: #888 !important;
+  }
+
+  .finding { page-break-inside: avoid; }
+
+  /* Improvement table — keep editable inputs visible as text */
+  .cell-input, .cell-select {
+    border: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+  /* show select arrow as text */
+  .cell-select { appearance: none; -webkit-appearance: none; }
+
+  .summary-foot { color: #555 !important; border-color: #888 !important; }
+
+  a, a:link, a:visited { color: black; text-decoration: none; }
+}

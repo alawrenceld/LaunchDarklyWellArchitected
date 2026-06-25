@@ -1,0 +1,23 @@
+# Used by `docker build` runs from the repo root.
+# Keeps the build context lean.
+
+# Tool node_modules
+tool/v2/node_modules/
+tool/v2/dist/
+tool/one-pager/node_modules/
+
+# Git + IDE + system
+.git/
+.github/
+.vscode/
+.idea/
+.claude/
+*.log
+.env
+.env.local
+.DS_Store
+
+# Build artifacts elsewhere
+**/dist/
+**/node_modules/
+**/*.log

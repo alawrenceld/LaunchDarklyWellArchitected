@@ -1,0 +1,10 @@
+# Don't ship node_modules into the build context
+node_modules/
+dist/
+.git/
+.vscode/
+.idea/
+*.log
+.env
+.env.local
+.DS_Store

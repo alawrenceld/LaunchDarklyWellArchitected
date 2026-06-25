@@ -103,7 +103,7 @@ Three common entry points:
 
 1. **First-time read.** Start with the [Framework Introduction](./framework/introduction.md), skim the [General Design Principles](./framework/design-principles.md), then pick the pillar that maps to your current pain.
 2. **Targeted reference.** Have a specific question? Jump directly to the relevant pillar's *Best Practices* section.
-3. **Workload review.** Use the [Review Process](./framework/review-process.md) and the [review tool](./tool/) to assess an LD-managed system end to end, surface risks, and produce an improvement plan.
+3. **Workload review.** Use the [Review Process](./framework/review-process.md) and the review tool — either the [v1 markdown workbook](./tool/) or the [v2 interactive web tool](./tool/v2/) — to assess an LD-managed system end to end, surface risks, and produce an improvement plan.
 
 ---
 

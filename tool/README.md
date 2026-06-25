@@ -1,8 +1,17 @@
 # LDWA Review Tool
 
-This is the **workbook form** of the LaunchDarkly Well-Architected review tool — the v1 delivery vehicle for running a review against an LD-managed system. Future phases will deliver an interactive web tool and (potentially) an in-product LaunchDarkly experience; this workbook is the canonical structure both will be built on.
+The LaunchDarkly Well-Architected review tool exists in two forms:
 
-To run a review, see [The Review Process](../framework/review-process.md) for the end-to-end flow. This tool provides the templates.
+| Form | Use when |
+|---|---|
+| **[v1 — Markdown workbook](#v1-the-workbook)** (this directory) | You want a templated text artifact you can fill in via any editor, drop into Notion / Confluence / Google Docs, or feed into a GRC tool. |
+| **[v2 — Interactive web tool](./v2/)** | You want a guided, branded review experience with risk-level scoring, automatic aggregation, and one-click PDF export. Self-contained; no backend; runs in any browser. Containerized. |
+
+Both forms cover the same review process and the same 229-question framework. Pick the one that fits your team's workflow.
+
+To run a review, see [The Review Process](../framework/review-process.md) for the end-to-end flow.
+
+## v1 — The workbook
 
 ---
 

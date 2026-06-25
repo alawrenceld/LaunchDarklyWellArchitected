@@ -1,0 +1,35 @@
+server {
+    listen 8080;
+    listen [::]:8080;
+    server_name _;
+
+    root /usr/share/nginx/html;
+    index index.html;
+
+    # Security headers
+    add_header X-Content-Type-Options "nosniff" always;
+    add_header X-Frame-Options "DENY" always;
+    add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+
+    # Long-lived caching for built assets (Vite produces hashed filenames)
+    location /assets/ {
+        expires 1y;
+        add_header Cache-Control "public, immutable";
+        try_files $uri =404;
+    }
+
+    # SPA fallback — all non-asset paths serve index.html
+    location / {
+        try_files $uri $uri/ /index.html;
+        # index.html should never be cached so config substitution always
+        # reflects current env vars
+        add_header Cache-Control "no-cache, no-store, must-revalidate";
+    }
+
+    # Healthcheck endpoint
+    location = /healthz {
+        access_log off;
+        return 200 "ok\n";
+        add_header Content-Type text/plain;
+    }
+}

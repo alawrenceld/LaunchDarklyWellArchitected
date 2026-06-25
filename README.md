@@ -56,7 +56,7 @@ Lenses re-apply the pillars to a specific domain or deployment context.
 | [AI / GenAI Lens](./lenses/ai-genai/) | Teams using LaunchDarkly AI Configs | Phase 2 ✓ |
 | [Developer Experience & Velocity Lens](./lenses/developer-experience-velocity/) | SDK patterns, IaC, testing, type-safety, onboarding | Phase 2 |
 | [Mobile Lens](./lenses/mobile/) | Client-side, offline-first, app-store cadence | Phase 3 ✓ |
-| [Hybrid / Multi-Cloud / On-Prem Lens](./lenses/hybrid-multicloud/) | Multiple providers, air-gapped, restricted-egress | Phase 3 |
+| [Hybrid / Multi-Cloud / On-Prem Lens](./lenses/hybrid-multicloud/) | Multiple providers, air-gapped, restricted-egress | Phase 3 ✓ |
 | [Platform Engineering Lens](./lenses/platform-engineering/) | LD as an internal platform capability | Phase 3 |
 | [Edge & Performance-Critical Lens](./lenses/edge-performance/) | Edge SDKs, latency budgets, Relay Proxy at scale | Phase 3 |
 | [Migration & Modernization Lens](./lenses/migration/) | Strangler-fig, dark launches, cutovers | Phase 3 |
